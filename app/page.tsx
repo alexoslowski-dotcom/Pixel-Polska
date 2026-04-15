@@ -1296,33 +1296,6 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [image, isPaid, paymentId, selectedHasTaken, selectedRect, selectedTooSmall]);
 
-  const clearAll = async () => {
-    const confirmReset = window.confirm("Czy na pewno chcesz wyczyscic plansze?");
-    if (!confirmReset) return;
-    try {
-      const res = await fetch("/api/pixels", { method: "DELETE", headers: { "x-client-id": getClientId() } });
-      const data = (await res.json()) as SaveResponse;
-      if (!res.ok || !data.success) return alert(data.message || "Nie mozna zresetowac planszy");
-      setBlocks([]);
-      setPaymentHistory([]);
-      setReservations([]);
-      setSelectedRect(null);
-      setImage(null);
-      setFileName("Nie wybrano pliku");
-      setTargetUrl("");
-      setAdTitle("");
-      setStep("select");
-      setSelectionError("");
-      setIsPaid(false);
-      setPaymentId(null);
-      setPaidRect(null);
-      setPreviewConfirmed(false);
-      if (typeof window !== "undefined") window.localStorage.removeItem(CHECKOUT_DRAFT_KEY);
-    } catch {
-      alert("Blad polaczenia z serwerem");
-    }
-  };
-
   const formatAgo = (dateValue?: string) => {
     if (!dateValue) return "przed chwila";
     const diff = Math.max(1, Math.floor((nowMs - Date.parse(dateValue)) / 1000));
@@ -2194,10 +2167,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-          <div className="pixel-admin-actions">
-            <button className="pixel-btn pixel-btn-danger" onClick={clearAll}>Reset planszy</button>
-          </div>
 
           {celebration.visible && (
             <div className="pixel-celebration" role="status" aria-live="polite">
