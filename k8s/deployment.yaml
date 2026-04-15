@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pixel-polska
+  namespace: pixel-polska
+  labels:
+    app: pixel-polska
+spec:
+  replicas: 3
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: pixel-polska
+  template:
+    metadata:
+      labels:
+        app: pixel-polska
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/your-org/pixel-polska:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: pixel-polska-config
+            - secretRef:
+                name: pixel-polska-secrets
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "1500m"
+              memory: "1Gi"
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 15
+            timeoutSeconds: 2
+            failureThreshold: 3
+          startupProbe:
+            httpGet:
+              path: /api/health
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 24
+          volumeMounts:
+            - name: pixel-data
+              mountPath: /app/data
+      volumes:
+        - name: pixel-data
+          persistentVolumeClaim:
+            claimName: pixel-polska-data-rwx

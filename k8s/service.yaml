@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pixel-polska
+  namespace: pixel-polska
+  labels:
+    app: pixel-polska
+spec:
+  type: ClusterIP
+  selector:
+    app: pixel-polska
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 3000

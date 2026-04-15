@@ -1,0 +1,286 @@
+▲ Next.js 16.2.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.228:3000
+- Environments: .env.local
+✓ Ready in 383ms
+Creating turbopack project { dir: 'C:\\Users\\alex\\Desktop\\pixel-polska', testMode: true }
+
+ GET /api/referrals?code=0C4E3882 200 in 539ms (next.js: 331ms, application-code: 208ms)
+ GET /api/payments/history 200 in 544ms (next.js: 197ms, application-code: 347ms)
+ GET /api/analytics/top 200 in 548ms (next.js: 291ms, application-code: 257ms)
+ GET / 200 in 550ms (next.js: 450ms, application-code: 100ms)
+ GET /api/pixels?mine=1 200 in 563ms (next.js: 259ms, application-code: 304ms)
+ GET / 200 in 156ms (next.js: 4ms, application-code: 151ms)
+[web-vitals] {
+  name: 'INP',
+  value: 16,
+  id: 'v4-1776293373398-1733497937906',
+  page: '/',
+  label: 'good',
+  navigationType: 'prerender',
+  ts: 1776293494612
+}
+ POST /api/analytics 202 in 38ms (next.js: 29ms, application-code: 9ms)
+[web-vitals] {
+  name: 'CLS',
+  value: 0.0001334730524297487,
+  id: 'v4-1776293373506-9590535153029',
+  page: '/',
+  label: 'good',
+  navigationType: 'prerender',
+  ts: 1776293494612
+}
+ POST /api/analytics 202 in 13ms (next.js: 5ms, application-code: 7ms)
+[web-vitals] {
+  name: 'FCP',
+  value: 296,
+  id: 'v4-1776293494801-6876335598761',
+  page: '/',
+  label: 'good',
+  navigationType: 'reload',
+  ts: 1776293494821
+}
+ POST /api/analytics 202 in 9ms (next.js: 4ms, application-code: 4ms)
+ GET /api/payments/history 200 in 35ms (next.js: 7ms, application-code: 28ms)
+ GET /api/referrals?code=0C4E3882 200 in 36ms (next.js: 15ms, application-code: 21ms)
+[web-vitals] {
+  name: 'TTFB',
+  value: 167,
+  id: 'v4-1776293494801-6835570902798',
+  page: '/',
+  label: 'good',
+  navigationType: 'reload',
+  ts: 1776293494822
+}
+ POST /api/analytics 202 in 10ms (next.js: 6ms, application-code: 4ms)
+ GET /api/analytics/top 200 in 45ms (next.js: 11ms, application-code: 34ms)
+ GET /api/pixels?mine=1 200 in 50ms (next.js: 4ms, application-code: 46ms)
+ GET / 200 in 63ms (next.js: 3ms, application-code: 60ms)
+[web-vitals] {
+  name: 'LCP',
+  value: 296,
+  id: 'v4-1776293494800-4185495972152',
+  page: '/',
+  label: 'good',
+  navigationType: 'reload',
+  ts: 1776293496430
+}
+ POST /api/analytics 202 in 8ms (next.js: 1996µs, application-code: 6ms)
+ POST /api/analytics 202 in 7ms (next.js: 2ms, application-code: 5ms)
+ PUT /api/pixels 200 in 11ms (next.js: 1465µs, application-code: 10ms)
+ GET /api/pixels?mine=1 200 in 11ms (next.js: 3ms, application-code: 8ms)
+ GET /api/pixels?mine=1 200 in 9ms (next.js: 1656µs, application-code: 7ms)
+ POST /api/images/moderation 200 in 33ms (next.js: 25ms, application-code: 8ms)
+ PUT /api/pixels 200 in 11ms (next.js: 1793µs, application-code: 10ms)
+ GET /api/pixels?mine=1 200 in 9ms (next.js: 1608µs, application-code: 7ms)
+ POST /api/payments 200 in 618ms (next.js: 35ms, application-code: 583ms)
+ GET /api/payments?paymentId=pay_346145c681994bd99a0da2656fc08f75 200 in 100ms (next.js: 3ms, application-code: 97ms)
+[web-vitals] {
+  name: 'INP',
+  value: 24,
+  id: 'v4-1776293494801-3378650354974',
+  page: '/',
+  label: 'good',
+  navigationType: 'reload',
+  ts: 1776293503547
+}
+ POST /api/analytics 202 in 7ms (next.js: 3ms, application-code: 4ms)
+[web-vitals] {
+  name: 'CLS',
+  value: 0,
+  id: 'v4-1776293494821-4403836130006',
+  page: '/',
+  label: 'good',
+  navigationType: 'reload',
+  ts: 1776293503548
+}
+ POST /api/analytics 202 in 6ms (next.js: 1523µs, application-code: 4ms)
+ GET / 200 in 57ms (next.js: 3ms, application-code: 55ms)
+ GET /?paymentId=pay_346145c681994bd99a0da2656fc08f75&checkout=success 200 in 52ms (next.js: 3ms, application-code: 49ms)
+[web-vitals] {
+  name: 'FCP',
+  value: 304,
+  id: 'v4-1776293539374-6033589863376',
+  page: '/',
+  label: 'good',
+  navigationType: 'navigate',
+  ts: 1776293539384
+}
+ POST /api/analytics 202 in 7ms (next.js: 2ms, application-code: 5ms)
+[web-vitals] {
+  name: 'TTFB',
+  value: 56.200000000186265,
+  id: 'v4-1776293539374-5505163625653',
+  page: '/',
+  label: 'good',
+  navigationType: 'navigate',
+  ts: 1776293539384
+}
+ POST /api/analytics 202 in 14ms (next.js: 9ms, application-code: 5ms)
+ GET /api/payments/history 200 in 40ms (next.js: 10ms, application-code: 30ms)
+ GET /api/referrals?code=0C4E3882 200 in 41ms (next.js: 15ms, application-code: 26ms)
+ GET /api/analytics/top 200 in 45ms (next.js: 13ms, application-code: 33ms)
+ GET /api/pixels?mine=1 200 in 57ms (next.js: 5ms, application-code: 52ms)
+ GET /api/payments?paymentId=pay_346145c681994bd99a0da2656fc08f75 200 in 365ms (next.js: 2ms, application-code: 363ms)
+ POST /api/pixels 200 in 28ms (next.js: 1851µs, application-code: 26ms)
+ GET /api/pixels?mine=1 200 in 18ms (next.js: 1769µs, application-code: 16ms)
+ GET /api/analytics/top 200 in 8ms (next.js: 1556µs, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 16ms (next.js: 1577µs, application-code: 14ms)
+ GET /api/analytics/top 200 in 12ms (next.js: 5ms, application-code: 7ms)
+ GET /api/pixels?mine=1 200 in 22ms (next.js: 2ms, application-code: 19ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1541µs, application-code: 4ms)
+ GET /api/referrals?code=0C4E3882 200 in 9ms (next.js: 4ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 20ms (next.js: 1759µs, application-code: 19ms)
+[web-vitals] {
+  name: 'LCP',
+  value: 352,
+  id: 'v4-1776293539373-5369095754190',
+  page: '/',
+  label: 'good',
+  navigationType: 'navigate',
+  ts: 1776293558159
+}
+ POST /api/analytics 202 in 7ms (next.js: 1802µs, application-code: 5ms)
+ POST /api/analytics 202 in 4ms (next.js: 1323µs, application-code: 3ms)
+ GET /api/analytics/top 200 in 12ms (next.js: 5ms, application-code: 7ms)
+ GET /api/pixels?mine=1 200 in 21ms (next.js: 1788µs, application-code: 19ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1606µs, application-code: 4ms)
+ GET /api/pixels?mine=1 200 in 18ms (next.js: 1616µs, application-code: 16ms)
+ DELETE /api/pixels 200 in 11ms (next.js: 1545µs, application-code: 10ms)
+ GET /api/referrals?code=0C4E3882 200 in 14ms (next.js: 7ms, application-code: 6ms)
+ GET /api/analytics/top 200 in 16ms (next.js: 2ms, application-code: 14ms)
+ GET /api/pixels?mine=1 200 in 18ms (next.js: 5ms, application-code: 14ms)
+[web-vitals] {
+  name: 'INP',
+  value: 16,
+  id: 'v4-1776293539373-9722971209470',
+  page: '/',
+  label: 'good',
+  navigationType: 'navigate',
+  ts: 1776293572414
+}
+ POST /api/analytics 202 in 7ms (next.js: 1749µs, application-code: 5ms)
+[web-vitals] {
+  name: 'CLS',
+  value: 0.07216867604024962,
+  id: 'v4-1776293539383-4740980700995',
+  page: '/',
+  label: 'good',
+  navigationType: 'navigate',
+  ts: 1776293572414
+}
+ POST /api/analytics 202 in 6ms (next.js: 2ms, application-code: 4ms)
+ GET /api/pixels?mine=1 200 in 8ms (next.js: 1427µs, application-code: 7ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1557µs, application-code: 4ms)
+ GET /api/analytics/top 200 in 10ms (next.js: 4ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 12ms (next.js: 1670µs, application-code: 11ms)
+ GET /api/referrals?code=0C4E3882 200 in 8ms (next.js: 4ms, application-code: 4ms)
+ GET /api/pixels?mine=1 200 in 11ms (next.js: 1513µs, application-code: 10ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1556µs, application-code: 4ms)
+ GET /api/analytics/top 200 in 10ms (next.js: 5ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 13ms (next.js: 1727µs, application-code: 12ms)
+ GET /api/pixels?mine=1 200 in 11ms (next.js: 1427µs, application-code: 9ms)
+ GET /api/payments/history 200 in 18ms (next.js: 3ms, application-code: 16ms)
+ GET /api/referrals?code=0C4E3882 200 in 20ms (next.js: 9ms, application-code: 10ms)
+ GET /api/analytics/top 200 in 22ms (next.js: 5ms, application-code: 17ms)
+ GET /api/pixels?mine=1 200 in 33ms (next.js: 3ms, application-code: 30ms)
+ GET /api/pixels?mine=1 200 in 12ms (next.js: 1582µs, application-code: 10ms)
+ GET /api/analytics/top 200 in 11ms (next.js: 5ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1675µs, application-code: 13ms)
+ GET /api/payments/history 200 in 8ms (next.js: 2ms, application-code: 6ms)
+ GET /api/referrals?code=0C4E3882 200 in 10ms (next.js: 6ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 13ms (next.js: 2ms, application-code: 11ms)
+ GET /api/analytics/top 200 in 11ms (next.js: 5ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1745µs, application-code: 12ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1643µs, application-code: 4ms)
+ GET /api/pixels?mine=1 200 in 8ms (next.js: 1778µs, application-code: 6ms)
+ GET /api/referrals?code=0C4E3882 200 in 10ms (next.js: 4ms, application-code: 6ms)
+ GET /api/analytics/top 200 in 16ms (next.js: 6ms, application-code: 10ms)
+ GET /api/pixels?mine=1 200 in 18ms (next.js: 1758µs, application-code: 17ms)
+ GET /api/pixels?mine=1 200 in 8ms (next.js: 1499µs, application-code: 6ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1392µs, application-code: 4ms)
+ GET /api/analytics/top 200 in 11ms (next.js: 4ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 13ms (next.js: 1586µs, application-code: 12ms)
+ GET /api/referrals?code=0C4E3882 200 in 11ms (next.js: 6ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 13ms (next.js: 1640µs, application-code: 12ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1318µs, application-code: 5ms)
+ GET /api/analytics/top 200 in 11ms (next.js: 6ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1864µs, application-code: 12ms)
+ GET /api/pixels?mine=1 200 in 8ms (next.js: 1522µs, application-code: 6ms)
+ GET /api/payments/history 200 in 16ms (next.js: 5ms, application-code: 11ms)
+ GET /api/referrals?code=0C4E3882 200 in 9ms (next.js: 1353µs, application-code: 8ms)
+ GET /api/analytics/top 200 in 21ms (next.js: 8ms, application-code: 13ms)
+ GET /api/pixels?mine=1 200 in 25ms (next.js: 2ms, application-code: 22ms)
+ GET /api/pixels?mine=1 200 in 7ms (next.js: 1468µs, application-code: 6ms)
+ GET /api/analytics/top 200 in 12ms (next.js: 5ms, application-code: 7ms)
+ GET /api/pixels?mine=1 200 in 15ms (next.js: 1803µs, application-code: 14ms)
+ GET /api/payments/history 200 in 7ms (next.js: 2ms, application-code: 5ms)
+ GET /api/referrals?code=0C4E3882 200 in 10ms (next.js: 5ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 2ms, application-code: 12ms)
+ GET /api/analytics/top 200 in 11ms (next.js: 4ms, application-code: 7ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1728µs, application-code: 12ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1807µs, application-code: 4ms)
+ GET /api/pixels?mine=1 200 in 8ms (next.js: 1535µs, application-code: 6ms)
+ GET /api/referrals?code=0C4E3882 200 in 10ms (next.js: 4ms, application-code: 6ms)
+ GET /api/analytics/top 200 in 17ms (next.js: 7ms, application-code: 10ms)
+ GET /api/pixels?mine=1 200 in 19ms (next.js: 1623µs, application-code: 18ms)
+ GET /api/pixels?mine=1 200 in 7ms (next.js: 1566µs, application-code: 6ms)
+ GET /api/payments/history 200 in 5ms (next.js: 1376µs, application-code: 4ms)
+ GET /api/analytics/top 200 in 14ms (next.js: 6ms, application-code: 7ms)
+ GET /api/pixels?mine=1 200 in 23ms (next.js: 2ms, application-code: 21ms)
+ GET /api/referrals?code=0C4E3882 200 in 9ms (next.js: 4ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 13ms (next.js: 1488µs, application-code: 11ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1350µs, application-code: 5ms)
+ GET /api/analytics/top 200 in 12ms (next.js: 6ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 2ms, application-code: 12ms)
+ GET /api/pixels?mine=1 200 in 10ms (next.js: 1449µs, application-code: 8ms)
+ GET /api/payments/history 200 in 17ms (next.js: 6ms, application-code: 12ms)
+ GET /api/referrals?code=0C4E3882 200 in 10ms (next.js: 1384µs, application-code: 8ms)
+ GET /api/analytics/top 200 in 21ms (next.js: 8ms, application-code: 14ms)
+ GET /api/pixels?mine=1 200 in 25ms (next.js: 3ms, application-code: 21ms)
+ GET /api/pixels?mine=1 200 in 8ms (next.js: 1561µs, application-code: 6ms)
+ GET /api/analytics/top 200 in 7ms (next.js: 1252µs, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 15ms (next.js: 1751µs, application-code: 13ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1515µs, application-code: 4ms)
+ GET /api/referrals?code=0C4E3882 200 in 11ms (next.js: 6ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1558µs, application-code: 12ms)
+ GET /api/analytics/top 200 in 10ms (next.js: 4ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 13ms (next.js: 1565µs, application-code: 12ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1696µs, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 7ms (next.js: 1631µs, application-code: 5ms)
+ GET /api/referrals?code=0C4E3882 200 in 10ms (next.js: 5ms, application-code: 6ms)
+ GET /api/analytics/top 200 in 16ms (next.js: 6ms, application-code: 10ms)
+ GET /api/pixels?mine=1 200 in 20ms (next.js: 1706µs, application-code: 18ms)
+ GET /api/pixels?mine=1 200 in 7ms (next.js: 1365µs, application-code: 6ms)
+ GET /api/payments/history 200 in 5ms (next.js: 1250µs, application-code: 4ms)
+ GET /api/analytics/top 200 in 10ms (next.js: 5ms, application-code: 5ms)
+ GET /api/pixels?mine=1 200 in 13ms (next.js: 1572µs, application-code: 11ms)
+ GET /api/referrals?code=0C4E3882 200 in 10ms (next.js: 4ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1648µs, application-code: 12ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1291µs, application-code: 4ms)
+ GET /api/analytics/top 200 in 13ms (next.js: 6ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 16ms (next.js: 1879µs, application-code: 14ms)
+ GET /api/pixels?mine=1 200 in 9ms (next.js: 1597µs, application-code: 7ms)
+ GET /api/payments/history 200 in 51ms (next.js: 15ms, application-code: 36ms)
+ GET /api/referrals?code=0C4E3882 200 in 18ms (next.js: 8ms, application-code: 11ms)
+ GET /api/analytics/top 200 in 47ms (next.js: 28ms, application-code: 19ms)
+ GET /api/pixels?mine=1 200 in 62ms (next.js: 8ms, application-code: 54ms)
+ GET /api/pixels?mine=1 200 in 8ms (next.js: 1361µs, application-code: 7ms)
+ GET /api/analytics/top 200 in 11ms (next.js: 5ms, application-code: 7ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1485µs, application-code: 13ms)
+ GET /api/payments/history 200 in 8ms (next.js: 1428µs, application-code: 6ms)
+ GET /api/referrals?code=0C4E3882 200 in 11ms (next.js: 5ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 15ms (next.js: 1590µs, application-code: 13ms)
+ GET /api/analytics/top 200 in 11ms (next.js: 5ms, application-code: 6ms)
+ GET /api/pixels?mine=1 200 in 14ms (next.js: 1576µs, application-code: 13ms)
+ GET /api/payments/history 200 in 6ms (next.js: 1872µs, application-code: 4ms)
+ GET /api/pixels?mine=1 200 in 9ms (next.js: 1530µs, application-code: 7ms)
+ GET /api/referrals?code=0C4E3882 200 in 13ms (next.js: 4ms, application-code: 9ms)
+ GET /api/analytics/top 200 in 15ms (next.js: 1666µs, application-code: 14ms)
+ GET /api/pixels?mine=1 200 in 23ms (next.js: 1811µs, application-code: 21ms)
+ GET /api/pixels?mine=1 200 in 7ms (next.js: 1283µs, application-code: 6ms)
+ GET /api/payments/history 200 in 5ms (next.js: 1316µs, application-code: 4ms)
+ GET /api/analytics/top 200 in 9ms (next.js: 3ms, application-code: 7ms)
+ GET /api/pixels?mine=1 200 in 16ms (next.js: 1738µs, application-code: 14ms)
+ GET /api/referrals?code=0C4E3882 200 in 34ms (next.js: 18ms, application-code: 16ms)
+ GET /api/pixels?mine=1 200 in 43ms (next.js: 6ms, application-code: 36ms)

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pixel-polska-config
+  namespace: pixel-polska
+data:
+  NODE_ENV: "production"
+  PORT: "3000"
