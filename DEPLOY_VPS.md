@@ -25,6 +25,7 @@ Ustaw prawidłowe wartości:
 - `NEXT_PUBLIC_APP_URL=https://twoja-domena.pl`
 - `STRIPE_SECRET_KEY`
 - `STRIPE_WEBHOOK_SECRET`
+- `PIXEL_RESET_TOKEN` (losowy sekret admina, wymagany do `DELETE /api/pixels`)
 - `IMAGE_MODERATION_MODE=enforce`
 - `OPENAI_API_KEY`
 

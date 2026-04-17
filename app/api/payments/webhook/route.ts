@@ -123,6 +123,14 @@ function verifyStripeSignature(rawBody: string, signatureHeader: string | null, 
   if (!timestampPart || signatures.length === 0) return false;
 
   const timestamp = timestampPart.slice(2);
+  const timestampSeconds = Number.parseInt(timestamp, 10);
+  if (!Number.isFinite(timestampSeconds)) return false;
+
+  const nowSeconds = Math.floor(Date.now() / 1000);
+  const ageSeconds = Math.abs(nowSeconds - timestampSeconds);
+  // Stripe podpis powinien byc swiezy, aby ograniczyc replay attack.
+  if (ageSeconds > 5 * 60) return false;
+
   const signedPayload = `${timestamp}.${rawBody}`;
   const expected = createHmac("sha256", webhookSecret).update(signedPayload).digest("hex");
   const expectedBuffer = Buffer.from(expected, "hex");
@@ -206,4 +214,3 @@ export async function POST(req: Request) {
     return withNoStoreHeaders(NextResponse.json({ success: false, message: "Webhook processing error" }, { status: 500 }));
   }
 }
-

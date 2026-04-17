@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
+import { resolveClientId } from "../_shared/clientIdentity";
 
 type PaymentRecord = {
   id: string;
@@ -22,16 +23,8 @@ const paymentsFilePath = path.join(process.cwd(), "data", "payments.json");
 const paymentsLockPath = path.join(process.cwd(), "data", "payments.lock");
 const PAYMENT_TTL_MS = 35 * 60 * 1000;
 
-function getClientIp(req: Request) {
-  const forwarded = req.headers.get("x-forwarded-for");
-  if (forwarded) return forwarded.split(",")[0].trim();
-  return "unknown";
-}
-
 function getClientId(req: Request) {
-  const header = req.headers.get("x-client-id")?.trim();
-  if (header && /^[a-zA-Z0-9_-]{6,80}$/.test(header)) return header;
-  return `ip_${getClientIp(req).replace(/[^a-zA-Z0-9_-]/g, "_")}`;
+  return resolveClientId(req);
 }
 
 function withNoStoreHeaders(res: NextResponse) {

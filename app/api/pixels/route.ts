@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
+import { timingSafeEqual } from "crypto";
 import path from "path";
 import { moderateImageDataUrl } from "../_shared/imageModeration";
+import { resolveClientId } from "../_shared/clientIdentity";
 
 type PixelRect = {
   id: string;
@@ -114,13 +116,7 @@ function getClientIp(req: Request) {
 }
 
 function getClientId(req: Request) {
-  const header = req.headers.get("x-client-id")?.trim();
-
-  if (header && /^[a-zA-Z0-9_-]{6,80}$/.test(header)) {
-    return header;
-  }
-
-  return `ip_${getClientIp(req).replace(/[^a-zA-Z0-9_-]/g, "_")}`;
+  return resolveClientId(req);
 }
 
 function enforceRateLimit(req: Request, action: "read" | "write") {
@@ -161,6 +157,18 @@ function withNoStoreHeaders(res: NextResponse) {
   res.headers.set("Pragma", "no-cache");
   res.headers.set("Expires", "0");
   return res;
+}
+
+function isValidResetToken(req: Request) {
+  const configuredToken = process.env.PIXEL_RESET_TOKEN?.trim();
+  if (!configuredToken) return false;
+
+  const providedToken = req.headers.get("x-admin-reset-token")?.trim() ?? "";
+  if (!providedToken) return false;
+
+  const a = Buffer.from(configuredToken);
+  const b = Buffer.from(providedToken);
+  return a.length === b.length && timingSafeEqual(a, b);
 }
 
 function trackAndCountActiveViewers(req: Request) {
@@ -1136,6 +1144,18 @@ export async function PUT(req: Request) {
 
 export async function DELETE(req: Request) {
   try {
+    if (!isValidResetToken(req)) {
+      return withNoStoreHeaders(
+        NextResponse.json(
+          {
+            success: false,
+            message: "Brak autoryzacji do resetu planszy",
+          },
+          { status: 403 }
+        )
+      );
+    }
+
     const rateError = enforceRateLimit(req, "write");
     if (rateError) {
       return withNoStoreHeaders(rateError);
