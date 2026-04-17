@@ -7,7 +7,8 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://pixelpolska.pl/sitemap.xml",
-    host: "https://pixelpolska.pl",
+    sitemap: "https://pixelarnia.pl/sitemap.xml",
+    host: "https://pixelarnia.pl",
   };
 }
+

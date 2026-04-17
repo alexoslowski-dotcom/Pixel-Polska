@@ -12,6 +12,7 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="0" y="0" width="1200" height="630" fill="url(#grid)"/>
   <rect x="90" y="110" rx="24" ry="24" width="1020" height="410" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)"/>
-  <text x="140" y="250" fill="#ffffff" font-size="76" font-family="Verdana, Geneva, sans-serif" font-weight="700">Pixel Polska</text>
-  <text x="140" y="330" fill="#bfdbfe" font-size="42" font-family="Verdana, Geneva, sans-serif">1 000 000 pikseli • 1 zl = 1 piksel</text>
+  <text x="140" y="250" fill="#ffffff" font-size="76" font-family="Verdana, Geneva, sans-serif" font-weight="700">Pixelarnia</text>
+  <text x="140" y="330" fill="#bfdbfe" font-size="42" font-family="Verdana, Geneva, sans-serif">1 000 000 pikseli - 1 zl = 1 piksel</text>
 </svg>
+

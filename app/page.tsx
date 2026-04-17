@@ -162,7 +162,7 @@ export default function Home() {
   const [targetUrl, setTargetUrl] = useState("");
   const [adTitle, setAdTitle] = useState("");
   const [ownerName, setOwnerName] = useState("");
-  const [ownerAvatar, setOwnerAvatar] = useState("🔥");
+  const [ownerAvatar, setOwnerAvatar] = useState("\uD83D\uDD25");
   const [selectionError, setSelectionError] = useState("");
   const [previewConfirmed, setPreviewConfirmed] = useState(false);
   const [, setIsPaying] = useState(false);
@@ -198,15 +198,15 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        name: "Pixel Polska",
-        url: "https://pixelpolska.pl",
-        logo: "https://pixelpolska.pl/og-pixel.svg",
-        sameAs: ["https://instagram.com/pixelpolska"],
+        name: "Pixelarnia",
+        url: "https://pixelarnia.pl",
+        logo: "https://pixelarnia.pl/og-pixel.svg",
+        sameAs: ["https://instagram.com/pixelarnia"],
         contactPoint: [
           {
             "@type": "ContactPoint",
             contactType: "customer support",
-            email: "kontakt@pixelpolska.pl",
+            email: "kontakt@pixelarnia.pl",
             areaServed: "PL",
             availableLanguage: "pl",
           },
@@ -214,8 +214,8 @@ export default function Home() {
       },
       {
         "@type": "WebSite",
-        name: "Pixel Polska",
-        url: "https://pixelpolska.pl",
+        name: "Pixelarnia",
+        url: "https://pixelarnia.pl",
         inLanguage: "pl-PL",
       },
       {
@@ -242,8 +242,8 @@ export default function Home() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Start", item: "https://pixelpolska.pl/" },
-          { "@type": "ListItem", position: 2, name: "Kup pixel", item: "https://pixelpolska.pl/#kup-pixel" },
+          { "@type": "ListItem", position: 1, name: "Start", item: "https://pixelarnia.pl/" },
+          { "@type": "ListItem", position: 2, name: "Kup pixel", item: "https://pixelarnia.pl/#kup-pixel" },
         ],
       },
     ],
@@ -1465,7 +1465,7 @@ export default function Home() {
 
       <section className="landing-hero">
         <div className="landing-hero-copy">
-          <h1 className="landing-brand-title">Pixel Polska</h1>
+          <h1 className="landing-brand-title">Pixelarnia</h1>
           <p className="landing-hero-tagline">1 zl = 1 pixel.</p>
           <div className="landing-cta-row">
             <a href="#kup-pixel" className="landing-cta landing-cta-primary">Kup pixel teraz</a>
@@ -1490,7 +1490,7 @@ export default function Home() {
         </div>
 
         <aside className="landing-hero-quote" aria-label="Cytat">
-          <p className="landing-hero-quote-text">&quot;Zostaw coś po sobie w internecie.&quot;</p>
+          <p className="landing-hero-quote-text">&quot;Zostaw cos po sobie w internecie.&quot;</p>
         </aside>
       </section>
 
@@ -2139,8 +2139,8 @@ export default function Home() {
             <div className="pixel-footer-cols">
               <section>
                 <h3>Kontakt</h3>
-                <p>Email: kontakt@pixelpolska.pl</p>
-                <p>Instagram: @pixelpolska</p>
+                <p>Email: kontakt@pixelarnia.pl</p>
+                <p>Instagram: @pixelarnia</p>
               </section>
               <section>
                 <h3>Regulamin</h3>
@@ -2188,6 +2188,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 

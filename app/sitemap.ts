@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://pixelpolska.pl";
+const siteUrl = "https://pixelarnia.pl";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -14,3 +14,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+

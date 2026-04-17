@@ -19,13 +19,13 @@ const brandFont = Bungee({
   weight: "400",
 });
 
-const siteUrl = "https://pixelpolska.pl";
+const siteUrl = "https://pixelarnia.pl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Pixel Polska | Reklama na planszy 1 000 000 pixel",
-    template: "%s | Pixel Polska",
+    default: "Pixelarnia | Reklama na planszy 1 000 000 pixel",
+    template: "%s | Pixelarnia",
   },
   description:
     "Kup i zarzadzaj swoim obszarem na wspolnej planszy 1 000 000 pixel. 1 zl za 1 pixel, szybka publikacja i widocznosc 24/7.",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   keywords: [
-    "pixel polska",
+    "pixelarnia",
     "reklama internetowa",
     "plansza pixel",
     "kup pixel",
@@ -41,17 +41,17 @@ export const metadata: Metadata = {
   ],
   category: "marketing",
   openGraph: {
-    title: "Pixel Polska",
+    title: "Pixelarnia",
     description: "1 000 000 pixel. Kup swoj obszar i pokaz marke online.",
     url: siteUrl,
-    siteName: "Pixel Polska",
+    siteName: "Pixelarnia",
     locale: "pl_PL",
     type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Pixel Polska - plansza pixel" }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Pixelarnia - plansza pixel" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pixel Polska",
+    title: "Pixelarnia",
     description: "1 000 000 pixel. Kup swoj obszar i pokaz marke online.",
     images: ["/opengraph-image"],
   },
@@ -77,3 +77,4 @@ export default function RootLayout({
     </html>
   );
 }
+

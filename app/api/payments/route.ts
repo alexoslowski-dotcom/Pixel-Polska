@@ -77,7 +77,7 @@ async function createStripeCheckoutSession(req: Request, payment: PaymentRecord)
   body.set("line_items[0][quantity]", "1");
   body.set("line_items[0][price_data][currency]", "pln");
   body.set("line_items[0][price_data][unit_amount]", String(payment.amount * 100));
-  body.set("line_items[0][price_data][product_data][name]", `Pixel Polska ${payment.width}x${payment.height}`);
+  body.set("line_items[0][price_data][product_data][name]", `Pixelarnia ${payment.width}x${payment.height}`);
   body.set("line_items[0][price_data][product_data][description]", `Obszar: ${payment.width}x${payment.height} @ ${payment.x},${payment.y}`);
   body.set("metadata[paymentId]", payment.id);
   body.set("metadata[clientId]", payment.clientId);
@@ -360,3 +360,4 @@ export async function POST(req: Request) {
     return withNoStoreHeaders(NextResponse.json({ success: false, message: "Nie udalo sie utworzyc platnosci" }, { status: 500 }));
   }
 }
+

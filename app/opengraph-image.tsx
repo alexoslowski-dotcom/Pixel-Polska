@@ -24,14 +24,15 @@ export default function Image() {
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 74, fontWeight: 800, letterSpacing: 1.5 }}>PIXEL POLSKA</div>
+        <div style={{ fontSize: 74, fontWeight: 800, letterSpacing: 1.5 }}>PIXELARNIA</div>
         <div style={{ fontSize: 42, opacity: 0.96 }}>1 000 000 pixel. 1 zl = 1 pixel.</div>
         <div style={{ fontSize: 30, opacity: 0.9 }}>
-          Kup miejsce dla swojej marki i zostaw ślad w internecie.
+          Kup miejsce dla swojej marki i zostaw slad w internecie.
         </div>
       </div>
     ),
     size
   );
 }
+
 
